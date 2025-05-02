@@ -11,4 +11,8 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("FlappyScene");
     }
+    public void LoadMainScene()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
 }

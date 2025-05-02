@@ -10,7 +10,7 @@ public class MiniGameTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            popupUI.SetActive(true); // "스페이스바를 눌러 미니게임 시작" 같은 안내 표시
+            popupUI.SetActive(true); 
         }
     }
 
@@ -18,7 +18,7 @@ public class MiniGameTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            popupUI.SetActive(false); // 팝업 숨김
+            popupUI.SetActive(false); 
         }
     }
 }
