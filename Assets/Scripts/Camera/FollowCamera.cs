@@ -7,6 +7,7 @@ public class FollowCamera : MonoBehaviour
     public Transform target;
     float offsetX;
     float offsetY;
+    public float smoothSpeed = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class FollowCamera : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x = target.position.x + offsetX;
         pos.y = target.position.y + offsetY;
-        transform.position = pos;
+        Vector3 smoothedPos = Vector3.Lerp(transform.position, pos, Time.deltaTime * smoothSpeed);
+        transform.position = smoothedPos;
     }
 }
