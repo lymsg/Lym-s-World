@@ -1358,7 +1358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flapGameUI: {fileID: 1497133984}
-  targetScore: 2
+  isFirstLoading: 1
+  targetScore: 30
 --- !u!4 &270561823
 Transform:
   m_ObjectHideFlags: 0
@@ -3442,7 +3443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c74fd644f4254291807692f6bdc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flapGameManager: {fileID: 0}
   startButton: {fileID: 1293934623}
   exitButton: {fileID: 152605871}
 --- !u!1 &1111421182
@@ -3710,7 +3710,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBE68\uAC04\uC5F4\uC1E0\uB97C \uD68D\uB4DD\uD588\uC2B5\uB2C8\uB2E4"
+  m_text: "\uBB34\uAE30\uC0C1\uC790 \uC5F4\uC1E0\uB97C \uD68D\uB4DD\uD588\uC2B5\uB2C8\uB2E4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 91a6da6879aa8244cafa788c574bc61b, type: 2}
   m_sharedMaterial: {fileID: -3705640269996021514, guid: 91a6da6879aa8244cafa788c574bc61b, type: 2}
@@ -3719,8 +3719,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283651071
-  m_fontColor: {r: 1, g: 0.3238992, b: 0.3238992, a: 1}
+    rgba: 4281874488
+  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4726,7 +4726,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "30\uC810\uC744 \uB2EC\uC131\uD574 \uBE68\uAC04\uC5F4\uC1E0\uB97C \uC5BB\uC73C\uC138\uC694"
+  m_text: "30\uC810\uC744 \uB2EC\uC131\uD574 \uBB34\uAE30\uC0C1\uC790 \uC5F4\uC1E0\uB97C
+    \uC5BB\uC73C\uC138\uC694"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 91a6da6879aa8244cafa788c574bc61b, type: 2}
   m_sharedMaterial: {fileID: -3705640269996021514, guid: 91a6da6879aa8244cafa788c574bc61b, type: 2}
@@ -4753,8 +4754,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 51.7
+  m_fontSizeBase: 51.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11841,7 +11842,7 @@ SceneRoots:
   - {fileID: 2081297070}
   - {fileID: 543378333}
   - {fileID: 462468019}
-  - {fileID: 270561823}
   - {fileID: 2054149829}
   - {fileID: 631572599}
   - {fileID: 406207720}
+  - {fileID: 270561823}

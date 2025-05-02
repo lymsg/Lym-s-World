@@ -24,6 +24,7 @@ public class FlapGameOverUI : FlapBaseUI
     
     public void OnClickExitButton()
     {
+        
         SceneManager.LoadScene("MainScene");
     }
     protected override UIState GetUIState()

@@ -37,7 +37,7 @@ public class FlapObstacle : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         FlapPlayer player = other.GetComponent<FlapPlayer>();
-        if (player != null)
+        if (player != null && !player.isDead)
             flapGameManager.AddScore(1);
     }
 }

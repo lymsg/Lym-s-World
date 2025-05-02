@@ -10,8 +10,7 @@ public class FlapGameManager : MonoBehaviour
 
     [SerializeField]
     private FlapGameUI flapGameUI;
-
-    public static bool isFirstLoading = true;
+    public bool isFirstLoading = true;
     public int targetScore = 2;
     public static FlapGameManager Instance
     {
@@ -64,7 +63,7 @@ public class FlapGameManager : MonoBehaviour
     public void AddScore(int score)
     {
         currentScore += score;
-        if (currentScore >= targetScore)
+        if (currentScore >= targetScore )
         {
             UIManager.SetGameClear();
             Time.timeScale = 0f;
@@ -73,16 +72,6 @@ public class FlapGameManager : MonoBehaviour
         {
             flapGameUI.UpdateScoreText(currentScore);
             Debug.Log("Score: " + currentScore);
-        }
-    }
-
-    public void Clear(int score)
-    {
-        if (score < targetScore) return;
-
-        else 
-        {
-
         }
     }
 }
