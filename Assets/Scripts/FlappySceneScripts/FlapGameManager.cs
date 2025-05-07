@@ -11,7 +11,7 @@ public class FlapGameManager : MonoBehaviour
     [SerializeField]
     private FlapGameUI flapGameUI;
     public bool isFirstLoading = true;
-    public int targetScore = 2;
+    public int targetScore;
     public static FlapGameManager Instance
     {
         get { return flapGameManager; }
@@ -66,6 +66,7 @@ public class FlapGameManager : MonoBehaviour
         if (currentScore >= targetScore )
         {
             UIManager.SetGameClear();
+            GameManager.Instance.weaponBoxKey = true;
             Time.timeScale = 0f;
         }
         else

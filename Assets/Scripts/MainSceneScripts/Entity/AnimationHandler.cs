@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimationHandler : MonoBehaviour
 {
     private static readonly int IsMoving = Animator.StringToHash("IsMove");
+    private static readonly int IsOpen = Animator.StringToHash("IsOpen");
 
     protected Animator animator;
 
@@ -12,10 +13,15 @@ public class AnimationHandler : MonoBehaviour
     {
         animator = GetComponentInChildren<Animator>();
     }
-
+    
     public void Move(Vector2 obj)
     {
         animator.SetBool(IsMoving, obj.magnitude > .5f);
+    }
+
+    public void SetIsOpen(bool isOpen)
+    {
+        animator.SetBool(IsOpen, isOpen);
     }
 
 }
