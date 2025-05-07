@@ -18253,7 +18253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 105786d1b9445a14e8e61d02b45cf37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponBoxKey: 1
+  weaponBoxKey: 0
   closedBoxImage: {fileID: 1345893210}
   openBoxImage: {fileID: 659340136}
   animationHandler: {fileID: 659340139}

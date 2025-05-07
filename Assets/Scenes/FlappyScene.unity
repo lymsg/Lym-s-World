@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flapGameUI: {fileID: 1497133984}
   isFirstLoading: 1
-  targetScore: 1
+  targetScore: 30
 --- !u!4 &270561823
 Transform:
   m_ObjectHideFlags: 0
