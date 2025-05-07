@@ -31,4 +31,11 @@ public class PlayerController : BaseController
             lookDirection = lookDirection.normalized;
         }
     }
+    public void EquipWeapon(WeaponHandler newWeapon)
+    {
+        if (weaponHandler != null)
+            Destroy(weaponHandler.gameObject);
+
+        weaponHandler = newWeapon;
+    }
 }
